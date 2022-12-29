@@ -17,3 +17,11 @@ output "green_count" {
 output "staging_count" {
   value = local.staging_env == null ? 0 : 1
 }
+
+output "blue_dns_name" {
+  value = var.blue_dns_name
+}
+
+output "green_dns_name" {
+  value = var.green_dns_name
+}
